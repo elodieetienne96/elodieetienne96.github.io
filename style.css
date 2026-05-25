@@ -279,6 +279,15 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
   width: 100%; border: 0; border-radius: 12px; display: block;
 }
 
+/* ===== Institution logos ===== */
+.inst-logo {
+  float: right;
+  height: 38px; width: auto; max-width: 168px;
+  object-fit: contain;
+  margin: 4px 0 12px 24px;
+}
+.hero-logo { height: 30px; width: auto; margin-top: 16px; }
+
 /* ===== Responsive ===== */
 @media (max-width: 720px) {
   body { font-size: 16px; }
@@ -294,4 +303,5 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
   .nav-inner { min-height: 58px; padding: 10px 22px; }
   main { padding: 0 22px 30px; }
   .callout { padding: 24px 22px; }
+  .inst-logo { height: 31px; margin-left: 14px; }
 }
