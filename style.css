@@ -294,6 +294,8 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
 .inst-logo.portrait { height: 56px; }
 .hero-logo { height: 30px; width: auto; }
 .hero-logos { display: flex; align-items: center; gap: 22px; margin-top: 16px; flex-wrap: wrap; }
+.collab-line { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.collab-logo { height: 34px; width: auto; flex-shrink: 0; }
 
 /* ===== Membership logos ===== */
 .members { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 34px; }
