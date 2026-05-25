@@ -229,6 +229,10 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
   margin: 20px 0 2px; padding-top: 6px;
 }
 
+/* ===== Review list ===== */
+.review-list { margin: 8px 0 0; padding-left: 20px; }
+.review-list li { padding: 5px 0; font-size: 1rem; line-height: 1.5; }
+
 /* ===== Simple two-column list (memberships / reviewing) ===== */
 .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 34px; }
 .cols .row {
