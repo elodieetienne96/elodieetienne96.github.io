@@ -340,6 +340,34 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
   margin-top: 8px; line-height: 1.4;
 }
 
+/* ===== Co-authors ===== */
+.coauthors {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+.coauthor {
+  border: 1px solid var(--rule); background: #fff;
+  padding: 20px 12px; text-align: center;
+}
+.ca-avatar {
+  width: 78px; height: 78px; border-radius: 50%;
+  margin: 0 auto 12px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--panel); border: 1px solid var(--rule);
+  color: var(--accent); font-family: var(--serif);
+  font-size: 1.5rem; font-weight: 600;
+  object-fit: cover; object-position: center;
+}
+.ca-name { font-size: 1.02rem; font-weight: 600; line-height: 1.25; }
+.ca-affil {
+  font-family: var(--sans); font-size: .8rem; color: var(--ink-soft);
+  margin-top: 5px; line-height: 1.4;
+}
+.ca-role {
+  font-family: var(--sans); font-size: .72rem; letter-spacing: .03em;
+  color: var(--accent); margin-top: 8px;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 720px) {
   body { font-size: 16px; }
