@@ -287,7 +287,9 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
   object-fit: contain;
   margin: 4px 0 12px 24px;
 }
-.hero-logo { height: 30px; width: auto; margin-top: 16px; }
+.inst-logo.portrait { height: 56px; }
+.hero-logo { height: 30px; width: auto; }
+.hero-logos { display: flex; align-items: center; gap: 22px; margin-top: 16px; flex-wrap: wrap; }
 
 /* ===== Membership logos ===== */
 .members { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 34px; }
@@ -315,6 +317,29 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
 .social-btn:hover { background: var(--accent); color: #fff; text-decoration: none; }
 .social-btn svg { width: 19px; height: 19px; display: block; }
 
+/* ===== Event photos & figures ===== */
+.event-photo {
+  float: right;
+  width: 224px; height: 150px;
+  object-fit: cover; object-position: center;
+  border: 1px solid var(--rule); background: var(--panel);
+  margin: 3px 0 12px 26px;
+}
+.event-photo.tall { object-position: center 24%; }
+.figures {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 22px;
+  margin-top: 24px;
+}
+.figure { margin: 0; }
+.figure img {
+  width: 100%; height: auto; display: block;
+  border: 1px solid var(--rule);
+}
+.figure figcaption {
+  font-family: var(--sans); font-size: .8rem; color: var(--ink-faint);
+  margin-top: 8px; line-height: 1.4;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 720px) {
   body { font-size: 16px; }
@@ -333,4 +358,6 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
   .inst-logo { height: 31px; margin-left: 14px; }
   .members { grid-template-columns: 1fr; }
   .member:nth-child(2) { border-top: 1px solid var(--rule-soft); }
+  .event-photo { width: 150px; height: 104px; margin-left: 16px; }
+  .figures { grid-template-columns: 1fr; }
 }
