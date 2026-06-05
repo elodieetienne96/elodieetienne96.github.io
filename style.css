@@ -266,8 +266,9 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
 .footer-nav { display: flex; gap: 18px; flex-wrap: wrap; }
 
 /* ===== Media embeds (Public outreach) ===== */
-.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 32px; margin-top: 8px; }
-.media-block { padding: 0; }
+.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 32px; margin-top: 8px; align-items: stretch; }
+.media-block { padding: 0; display: flex; flex-direction: column; }
+.media-block .video-embed, .media-block .audio-embed { margin-top: auto; }
 .media-block h3 { font-size: 1.16rem; font-weight: 600; }
 .media-block .media-meta {
   font-family: var(--sans); font-size: .82rem; color: var(--accent);
