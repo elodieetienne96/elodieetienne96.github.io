@@ -291,11 +291,11 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
 /* ===== Institution logos ===== */
 .inst-logo {
   float: right;
-  height: 38px; width: auto; max-width: 168px;
-  object-fit: contain;
+  width: 110px; height: 40px;
+  object-fit: contain; object-position: right center;
   margin: 4px 0 12px 24px;
 }
-.inst-logo.portrait { height: 56px; }
+.inst-logo.portrait { width: 56px; height: 56px; }
 .hero-logo { height: 30px; width: auto; }
 .hero-logos { display: flex; align-items: center; gap: 22px; margin-top: 16px; flex-wrap: wrap; }
 .collab-line { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
@@ -393,7 +393,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 30px; }
   .nav-inner { min-height: 58px; padding: 10px 22px; }
   main { padding: 0 22px 30px; }
   .callout { padding: 24px 22px; }
-  .inst-logo { height: 31px; margin-left: 14px; }
+  .inst-logo { width: 90px; height: 32px; margin-left: 14px; }
   .members { grid-template-columns: 1fr; }
   .member:nth-child(2) { border-top: 1px solid var(--rule-soft); }
   .event-photo { width: 150px; height: 104px; margin-left: 16px; }
