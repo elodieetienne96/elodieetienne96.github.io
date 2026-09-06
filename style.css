@@ -436,3 +436,4 @@ details.more > summary:hover { text-decoration: underline; }
 }
 .role-group .entry .what h3 { font-size: 1.1rem; font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--ink); }
 .talk-photo.small { width: 110px; height: 72px; margin: 4px 0 12px 24px; }
+.talk-photo.tall { object-position: center 8%; }
