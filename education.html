@@ -129,5 +129,29 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var photos = document.querySelectorAll('img.talk-photo, img.event-photo, .figure img, img.ca-avatar, .hero-photo img');
+  if (!photos.length) return;
+  var box = document.createElement('div');
+  box.className = 'lightbox';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-label', 'Enlarged photo');
+  var big = document.createElement('img');
+  box.appendChild(big);
+  document.body.appendChild(box);
+  function close() { box.classList.remove('open'); }
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  photos.forEach(function (img) {
+    img.classList.add('zoomable');
+    img.tabIndex = 0;
+    img.title = 'Click to enlarge';
+    function open() { big.src = img.currentSrc || img.src; big.alt = img.alt; box.classList.add('open'); }
+    img.addEventListener('click', open);
+    img.addEventListener('keydown', function (e) { if (e.key === 'Enter') open(); });
+  });
+})();
+</script>
 </body>
 </html>
