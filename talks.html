@@ -82,6 +82,33 @@
       <h2>Conference talks &amp; posters</h2>
     </div>
     <div class="entry">
+      <div class="when">Nov 2026</div>
+      <div class="what">
+        <img class="talk-photo" src="WACAI2026_talk.jpg" alt="Presenting at WACAI 2026, Paris">
+        <h3>WACAI 2026, Paris</h3>
+        <div class="meta">Workshop Affects, Compagnons Artificiels et Interactions (GDR IHM) &middot; Inria Paris, France</div>
+        <p>Presented <em>A Methodology to Compare Real and LLM-Simulated Multimodal Interactions: The Case of Gender Bias</em> (oral presentation on abstract). Also member of the organizing committee and session chair.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">Oct 2026</div>
+      <div class="what">
+        <img class="talk-photo" src="ICMI2026.jpg" alt="Presenting at ICMI 2026, Napoli">
+        <h3>28th ACM International Conference on Multimodal Interaction (ICMI'26), Napoli</h3>
+        <div class="meta">Italy &middot; first participation in ICMI</div>
+        <p>Presented <em>A Methodology to Compare Real and LLM-Simulated Multimodal Interactions: The Case of Gender Bias</em>, the first paper of my postdoctoral project, co-authored with Magalie Ochs, Jean-Michel Loubes, and Chlo&eacute; Clavel.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">Oct 2026</div>
+      <div class="what">
+        <img class="talk-photo" src="FIE2026.jpg" alt="Presenting at FIE 2026, Paphos">
+        <h3>IEEE Frontiers in Education Conference (FIE 2026), Paphos</h3>
+        <div class="meta">Cyprus</div>
+        <p>Presented <em>A Virtual Reality Approach to Public Speaking Training in Higher Education</em>, with Justin Cho, Timothy Jung, and Micha&euml;l Schyns. I also chaired three sessions and attended the EmpowerAI pre-conference workshop on the ethical use of AI in higher education.</p>
+      </div>
+    </div>
+    <div class="entry">
       <div class="when">Feb 2026</div>
       <div class="what">
         <img class="talk-photo" src="Rennes.jpeg" alt="Poster at TransNum&eacute;riques 2026, Rennes">
@@ -99,6 +126,8 @@
         <p>First scientific presentation of my postdoctoral work: <em>&Eacute;tude des biais de genre dans la collaboration multimodale humain-agent&nbsp;: entre observation et simulation</em>.</p>
       </div>
     </div>
+    <details class="more">
+      <summary><span class="morelbl">Show 18 more</span><span class="less">Show less</span></summary>
     <div class="entry">
       <div class="when">Sep 2025</div>
       <div class="what">
@@ -117,8 +146,6 @@
         <p>Presented <em>Public Speaking Training in Virtual Reality: A Multidisciplinary and Explainable Approach for Education and Research</em>, the core of my doctoral journey, co-authored with Micha&euml;l Schyns.</p>
       </div>
     </div>
-    <details class="more">
-      <summary><span class="morelbl">Show 16 more</span><span class="less">Show less</span></summary>
     <div class="entry">
       <div class="when">2025</div>
       <div class="what">
@@ -262,7 +289,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div>&copy; 2026 Elodie Etienne &middot; Last updated September 2026</div>
+    <div>&copy; 2026 Elodie Etienne &middot; Last updated November 2026</div>
     <nav class="footer-nav">
       <a href="index.html">About</a>
       <a href="education.html">Education</a>
@@ -276,5 +303,26 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var box = document.createElement('div');
+  box.className = 'lightbox';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-label', 'Enlarged photo');
+  var big = document.createElement('img');
+  box.appendChild(big);
+  document.body.appendChild(box);
+  function close() { box.classList.remove('open'); }
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  document.querySelectorAll('img.talk-photo').forEach(function (img) {
+    img.tabIndex = 0;
+    img.title = 'Click to enlarge';
+    function open() { big.src = img.src; big.alt = img.alt; box.classList.add('open'); }
+    img.addEventListener('click', open);
+    img.addEventListener('keydown', function (e) { if (e.key === 'Enter') open(); });
+  });
+})();
+</script>
 </body>
 </html>
