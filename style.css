@@ -464,3 +464,18 @@ img.zoomable { cursor: zoom-in; }
   .talk-photo, .talk-photo.small { width: 130px; height: 87px; margin-left: 14px; }
   .event-photo { width: 150px; height: 100px; margin-left: 14px; }
 }
+
+/* ===== In-page table of contents ===== */
+.toc {
+  display: flex; flex-wrap: wrap; gap: 8px 10px;
+  margin: 0 0 8px; padding: 14px 0;
+  border-top: 1px solid var(--rule-soft); border-bottom: 1px solid var(--rule-soft);
+}
+.toc a {
+  font-family: var(--sans); font-size: .82rem; font-weight: 500;
+  color: var(--accent); text-decoration: none;
+  padding: 5px 11px; border: 1px solid var(--rule); border-radius: 3px; background: #fff;
+}
+.toc a:hover { border-color: var(--accent); }
+html { scroll-behavior: smooth; }
+section[id], .pub-group[id] { scroll-margin-top: 80px; }
